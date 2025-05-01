@@ -49,7 +49,7 @@ PKG_KERNEL ?= $(PKGS_PREFIX)/kernel:$(PKGS)
 PKG_TALOSCTL_CNI_BUNDLE_INSTALL ?= $(PKGS_PREFIX)/talosctl-cni-bundle-install:$(EXTRAS)
 
 # renovate: datasource=github-tags depName=golang/go
-GO_VERSION ?= 1.21
+GO_VERSION ?= 1.22
 # renovate: datasource=go depName=golang.org/x/tools
 GOIMPORTS_VERSION ?= v0.16.0
 # renovate: datasource=go depName=mvdan.cc/gofumpt
