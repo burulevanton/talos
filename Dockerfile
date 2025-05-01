@@ -131,7 +131,7 @@ RUN --mount=type=cache,target=/.cache go install github.com/planetscale/vtprotob
 ARG IMPORTVET_VERSION
 RUN --mount=type=cache,target=/.cache go install github.com/siderolabs/importvet/cmd/importvet@${IMPORTVET_VERSION} \
     && mv /go/bin/importvet /toolchain/go/bin/importvet
-RUN --mount=type=cache,target=/.cache go install golang.org/x/vuln/cmd/govulncheck@latest \
+RUN --mount=type=cache,target=/.cache go install golang.org/x/vuln/cmd/govulncheck@v1.0.0 \
     && mv /go/bin/govulncheck /toolchain/go/bin/govulncheck
 RUN --mount=type=cache,target=/.cache go install github.com/uber/prototool/cmd/prototool@v1.10.0 \
     && mv /go/bin/prototool /toolchain/go/bin/prototool
