@@ -1,7 +1,7 @@
 REGISTRY ?= ghcr.io
 USERNAME ?= siderolabs
 SHA ?= $(shell git describe --match=none --always --abbrev=8 --dirty)
-TAG ?= $(shell git describe --tag --always --dirty --match v[0-9]\*)
+TAG ?= 1.7.7-custom
 ABBREV_TAG ?= $(shell git describe --tag --always --match v[0-9]\* --abbrev=0 )
 TAG_SUFFIX ?=
 SOURCE_DATE_EPOCH ?= $(shell git log -1 --pretty=%ct)
