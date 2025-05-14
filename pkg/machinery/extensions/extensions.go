@@ -10,7 +10,8 @@ var AllowedPaths = []string{
 	"/etc/cri/conf.d",
 	"/lib/firmware",
 	"/lib/modules",
-	"/lib64/ld-linux-x86-64.so.2",
+	"/usr/lib/ld-linux-x86-64.so.2",
+	"/usr/bin/ldconfig",
 	"/usr/etc/udev/rules.d",
 	"/usr/local",
 	// glvnd, egl and vulkan are needed for OpenGL/Vulkan.
